@@ -6147,7 +6147,7 @@ window.TRIALS = [
       "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39481395/",
       "sourceTitle": "Camizestrant, a next-generation oral SERD, versus fulvestrant in post-menopausal women with oestrogen receptor-positive, HER2-negative advanced breast cancer (SERENA-2): a multi-dose, open-label, randomised, phase 2 trial.",
       "sourceType": "original_paper",
-      "note": "初回主要結果原著。既存監査で確認された冊子月を採用。正確な先行オンライン日は今回確証なし。年は確定しており7年境界の判定に影響しない。",
+      "note": "初回主要結果原著。既存監査で確認された冊子月を採用。正確な先行オンライン日は今回確証なし。年は確定しており期間境界の判定に影響しない。",
       "dateBasis": "issue_month"
     },
     "reports": []
@@ -7049,7 +7049,7 @@ window.TRIALS = [
       "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/37657462/",
       "sourceTitle": "Neoadjuvant palbociclib plus either giredestrant or anastrozole in oestrogen receptor-positive, HER2-negative, early breast cancer (coopERA Breast Cancer): an open-label, randomised, controlled, phase 2 study.",
       "sourceType": "original_paper",
-      "note": "初回主要結果原著。既存監査で確認された冊子月を採用。正確な先行オンライン日は今回確証なし。年は確定しており7年境界の判定に影響しない。",
+      "note": "初回主要結果原著。既存監査で確認された冊子月を採用。正確な先行オンライン日は今回確証なし。年は確定しており期間境界の判定に影響しない。",
       "dateBasis": "issue_month"
     },
     "reports": []
@@ -17056,7 +17056,7 @@ window.TRIALS = [
       "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/33002436/",
       "sourceTitle": "KATE2 一次報告",
       "sourceType": "original_paper",
-      "note": "初回主要結果原著。既存監査で確認された冊子月を採用。正確な先行オンライン日は今回確証なし。年は確定しており7年境界の判定に影響しない。",
+      "note": "初回主要結果原著。既存監査で確認された冊子月を採用。正確な先行オンライン日は今回確証なし。年は確定しており期間境界の判定に影響しない。",
       "dateBasis": "issue_month"
     }
   },
@@ -17728,7 +17728,7 @@ window.TRIALS = [
       "date": "2019-06-06",
       "precision": "day",
       "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6615016/",
-      "note": "Lancet主解析のオンライン公開日。7年境界2019-10-06より前。2020年追跡延長とは区別。"
+      "note": "Lancet主解析のオンライン公開日。2019-10-06の期間境界より前。2020年追跡延長とは区別。"
     }
   },
   {

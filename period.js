@@ -6,8 +6,8 @@ window.TrialPeriod = (() => {
     return ['year','month','day'].map(k=>parts.find(p=>p.type===k).value).join('-');
   }
   function windowFor(today) {
-    const [y,m,d]=today.split('-').map(Number), last=new Date(Date.UTC(y-7,m,0)).getUTCDate();
-    return {today,cutoff:`${y-7}-${String(m).padStart(2,'0')}-${String(Math.min(d,last)).padStart(2,'0')}`};
+    const [y,m,d]=today.split('-').map(Number), last=new Date(Date.UTC(y-5,m,0)).getUTCDate();
+    return {today,cutoff:`${y-5}-${String(m).padStart(2,'0')}-${String(Math.min(d,last)).padStart(2,'0')}`};
   }
   function interval(raw, observedDate) {
     const m=String(raw||'').match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/);
