@@ -3,7 +3,7 @@
 window.mergeOwnerPublications=function(publications){
  const list=window.TRIALS||[],lines=window.TREATMENT_LINES||{};
  const keys=t=>[...(t.paperKeys||[]),...([t.sourceUrl,t.url,...(t.sources||[]).map(s=>s.url)]).flatMap(u=>{const value=String(u||''),pmid=value.match(/pubmed\.ncbi\.nlm\.nih\.gov\/(\d+)/),doi=value.match(/doi\.org\/(10\.\d{4,9}\/[^?#\s]+)/i);return [...(pmid?['pmid:'+Number(pmid[1])]:[]),...(doi?['doi:'+doi[1].toLowerCase()]:[])];})];
- for(const p of publications){if(p.record&&!list.some(t=>t.id===p.trialId)){list.push({...p.record,primaryAnalysisKey:p.analysisKey});if(p.lineMetadata)lines[p.trialId]=p.lineMetadata;}}
+ for(const p of publications){if(p.record&&!list.some(t=>t.id===p.trialId)){list.push({...p.record,primaryAnalysisKey:p.analysisKey});if(p.lineMetadata&&(Object.values(p.lineMetadata.axes||{}).some(a=>a&&a.lines&&a.lines.length)||!lines[p.trialId]))lines[p.trialId]=p.lineMetadata;}}
  for(const p of publications){const i=list.findIndex(t=>t.id===p.trialId);if(i<0)continue;const t=list[i];if(t.primaryAnalysisKey===p.analysisKey||keys(t).some(k=>p.paperKeys.includes(k))||(t.reports||[]).some(r=>r.id===p.report.id||r.analysisKey===p.analysisKey||keys(r).some(k=>p.paperKeys.includes(k))))continue;list[i]={...t,reports:[...(t.reports||[]),p.report]};}
  window.TREATMENT_LINES=lines;return list;
 };

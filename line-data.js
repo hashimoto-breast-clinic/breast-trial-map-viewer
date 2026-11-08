@@ -3441,5 +3441,45 @@ window.TREATMENT_LINES = {
     "maintenance": false,
     "note": "母集団の記載は全身療法のレジメン数であり、化学療法のライン数とは確定できないため、化学療法軸は付けない（先例 optitrop-breast01 に倣う）。",
     "checkedDate": "2026-11-08"
+  },
+  "emilia": {
+    "id": "emilia",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "全身療法：一次・二次・三次以降治療",
+        "note": "原文では、転移期の前化学療法レジメン数を層別因子（0または1 対 1超）とし、進行は「直近の治療中・終了後」または「早期病変の治療後6か月以内」を適格とする。周術期治療後6か月以内の進行を転移期の初回治療（既治療0）と数えて一次を含み、三次以降は「1超」の層による。二次は、組み入れ基準が必須の前治療の病期として転移期を明示していることから、その最小構成（転移期にタキサン＋トラスツズマブの併用1レジメンを受けて進行した例）で支える（構成規則による読み）。T-DM1・ラパチニブ・カペシタビンの既治療は除外。",
+        "sourceUrls": [
+          "https://clinicaltrials.gov/study/NCT00829166",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC5125250/"
+        ],
+        "verification": "primary_verified",
+        "evidenceQuote": "Prior treatment for breast cancer in the adjuvant, unresectable, locally advanced, or metastatic setting must include both a taxane, alone or in combination with another agent, and trastuzumab, alone or in combination with another agent",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "化学療法/ADC：一次・二次・三次以降治療",
+        "note": "原文の層別因子「転移期（切除不能・局所進行を含む）の前化学療法レジメン数 0または1 対 1超」から、既治療0・1・2以上が適格と読み、既治療数＋1でライン換算した。一次・二次は組み入れ基準からも支えられる。周術期治療後6か月以内の進行は転移期の初回（既治療0）に当たる。T-DM1の既治療は除外のため、既治療ADCの数え方は結果に影響しない。",
+        "sourceUrls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC5125250/",
+          "https://clinicaltrials.gov/study/NCT00829166"
+        ],
+        "verification": "primary_verified",
+        "evidenceQuote": "Stratification factors were world region (United States, Western Europe, or other), the number of prior chemotherapy regimens for unresectable, locally advanced or metastatic disease (0 or 1 vs. >1), and disease involvement (visceral vs. nonvisceral).",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "note": "転移・切除不能進行期の適格基準と層別因子を基準に分類。抗HER2療法軸は、転移期抗HER2療法の既治療2以上を支える記述も外す記述もなく、プロトコル補遺が未入手のため未分類。",
+    "checkedDate": "2026-11-08"
   }
 };
