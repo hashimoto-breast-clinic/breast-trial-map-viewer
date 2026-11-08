@@ -1,13 +1,13 @@
 {
-  "exportId": "20261108-3162753a99ea",
-  "exportedAt": "2026-11-08T14:48:29.299Z",
-  "inputSnapshotSha256": "f808c49d7efb89ef0da82b244b1b3a52c365cd223c9ad20ae2ec931d482c4c26",
-  "privateCommit": "f1d4052124a0e518b81312b7e1f0aa25d6ed1e7c",
+  "exportId": "20261109-fa4a10a9f146",
+  "exportedAt": "2026-11-08T17:40:53.105Z",
+  "inputSnapshotSha256": "a311dbcd0a8500ac82bc8164e47770bf4b9b976888162504facf4b99bdfbe211",
+  "privateCommit": "293dc203a63a600adf95512f7d57063c744b8403",
   "idVersion": 2,
-  "inputsDigest": "3162753a99ea2bb3395cafd0841445abc23ce3b4a50acf02d7c7d7b77a149d08",
+  "inputsDigest": "fa4a10a9f14634ff85f56c4c1faff26d103907da5dbe1eb8ee5bd671b391ee7d",
   "inputs": {
-    "snapshotId": "publish-20261108T144750Z",
-    "snapshotSha256": "f808c49d7efb89ef0da82b244b1b3a52c365cd223c9ad20ae2ec931d482c4c26",
+    "snapshotId": "publish-20261108T174035Z",
+    "snapshotSha256": "a311dbcd0a8500ac82bc8164e47770bf4b9b976888162504facf4b99bdfbe211",
     "distFiles": {
       "index.html": "6f53848605c6eaaa23567c36afbb262e02a99c717501a1a04146fc9cd93a9366",
       "reviews.html": "ccb1a289bd614dcb6e1c74d1b3d93d58a673ca9796576927c5663a695673f2a7",
@@ -116,20 +116,20 @@
   "outputFiles": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "app.js": "5bcae7e5c526eac8b976083b4ab1f5bc14b8a8d21c9f8ea0353da2f41f99eec5",
-    "approved-data.js": "bf2e004562f940901e67fb795fe051c82cf1f92694032ba6cf3013ba32c2c90c",
+    "approved-data.js": "b8a6b3768095081ef58f32dafe8a9347865542a28fc63a06ed5a5a20872127a5",
     "approved-explanations.js": "33fc6f5ebacebee35c9756496c6191c6f6e1214830995479adc743dd8421c249",
     "clinical-classification.js": "0319541229dbb163477071ff8c62f129f605a52fd2d83f6a07e2d2a5a871f502",
     "favicon.svg": "f71b1917627a0473cb18f787d4c4bc0736c179bf7b0dba7b3e1d691f8690e879",
     "guidelines.js": "5fff480ff2d22eb5a268674fc4a88389bdd865297fb29088f5627944172d272e",
-    "index.html": "7c447f908dfe23fb2e76750c997c16d6f99d53f6d4a3b1534864bd8c2538ad74",
+    "index.html": "2ab674569830b990710050db929941b8a552daa8dfb17ff4a03b466bb6e3f954",
     "line-data.js": "19ecbf16d4aaaaec8f0889e11d62d69b173b4c91e32a8d4fab25ef7626fb2b70",
     "ongoing.js": "a38f8d3457e00b1352585215e0826bfa7e00c590ec76642b56a5cfcdf9ebb7d6",
     "period.js": "336e93c962ec83046846b4fd8cd4139361445082b28971eec7312da6fc818027",
     "pipeline.js": "9d051cab1dd5fff18683fae400206a56e5f659b27ba9b7c4f0a8df34040b6fac",
-    "review.html": "6980f147e1a12c98669137a7edd704f971c26540fa2be3686e9616b2a8ddc238",
-    "reviews-data.js": "21fd6cae65c58e2159ca5d25cd80a010889f935b02d308a4c876e10fd7f29065",
+    "review.html": "17a9b38d980e015e75f5e1977bef8442d2d1cc5790f5cb4235ce3f040fdbb2cf",
+    "reviews-data.js": "12ce8fa318077dd90913150f184d551b8796ce50bae1e063f8ed185195e9974b",
     "reviews.css": "6bdaddadd42cf75470b0516e1d2096ce3637447622e2abb00d6517e22bb7d0a8",
-    "reviews.html": "d307ecb5dd37fec0316eb76778a8e5f039cbfe479a7abcf957e0376d8e7ca2b0",
+    "reviews.html": "fa2a903a5f7a3c4ffc5d7bac7ab6e8c43f38b0f7257a2b7387c714ae50f09511",
     "reviews.js": "215ef4204e8fe0fe615d39558d8fac6add72d9de94fd6b8fd9c2f088b9796750",
     "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
     "search-aliases.js": "31fe217892ef618d67faa9328b87fc7df5be9385c2089376dad17cf8bdb219a9",
@@ -140,8 +140,8 @@
   },
   "diffCheck": {
     "mode": "expected-changes",
-    "prevExportId": "20261108-1f4f40dd",
-    "prevCommit": "095f961cdd2a41d7a0a2da01e41f90d11db783c3",
-    "diffSha256": "593f3302f5eda469fefc9eb59e8757b502fb3bc80a6c111ceb4b645ca2e743df"
+    "prevExportId": "20261108-3162753a99ea",
+    "prevCommit": "af8a6e0b8a855d5d16d81d5b8f55463e6295280d",
+    "diffSha256": "94b17cf2463bae3199693d5cda968940455c62b0495ff9805ea1b0c9c5fc9654"
   }
 }
