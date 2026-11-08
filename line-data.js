@@ -2881,5 +2881,565 @@ window.TREATMENT_LINES = {
       "https://rctportal.mhlw.go.jp/detail/jr?trial_id=jRCTs021210010"
     ],
     "checkedDate": "2026-10-23"
+  },
+  "cleopatra": {
+    "id": "cleopatra",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2"
+        ],
+        "label": "全身療法：一次・二次治療",
+        "note": "転移期の化学療法・生物学的療法は未治療。ただし内分泌療法は1ラインまで既治療でもよいため、通算では一次治療と、内分泌療法1ライン後の二次治療の両方を含む。術前・術後化学療法（トラスツズマブ併用を含む）はラインに数えない。",
+        "verification": "classification_only",
+        "evidenceQuote": "転移病変に対する化学療法・生物学的療法は未治療。内分泌療法1ラインまで許容。",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1"
+        ],
+        "label": "化学療法/ADC：一次治療",
+        "note": "転移期の化学療法は未治療。術前・術後化学療法は既治療でもよいが、転移期のラインには数えない（終了から転移診断まで12か月以上が条件）。同型のphila（タキサン＋トラスツズマブ基盤・転移期未治療）にchemotherapy軸「一次」が付いている。",
+        "verification": "classification_only",
+        "evidenceQuote": "転移病変に対する化学療法・生物学的療法は未治療。内分泌療法1ラインまで許容。術前・術後化学療法（トラスツズマブ併用を含む）終了から転移診断まで12か月以上。",
+        "checkedDate": "2026-11-08"
+      },
+      "antiher2": {
+        "lines": [
+          "1"
+        ],
+        "label": "抗HER2療法（HER2陽性）：一次治療",
+        "note": "転移期の生物学的療法は未治療のため、転移期抗HER2療法は一次治療。lineLabel（進行乳癌に対する抗HER2療法＋化学療法の一次治療）とも整合。術前・術後のトラスツズマブ使用歴はあってもよく、ラインには数えない。",
+        "verification": "classification_only",
+        "evidenceQuote": "転移病変に対する化学療法・生物学的療法は未治療。内分泌療法1ラインまで許容。術前・術後化学療法（トラスツズマブ併用を含む）終了から転移診断まで12か月以上。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "note": "内分泌療法軸は付けない：試験治療（ペルツズマブ＋トラスツズマブ＋ドセタキセル）に内分泌療法を含まないため。",
+    "checkedDate": "2026-11-08"
+  },
+  "monaleesa-7": {
+    "id": "monaleesa-7",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2"
+        ],
+        "label": "全身療法：一次・二次治療",
+        "note": "進行病変に対する内分泌療法は未治療で、化学療法は1ラインまで既治療でもよい。化学療法0〜1ライン既治療なので全身療法は一次・二次。同型のfalcon（内分泌療法未治療・化学療法1ラインまで）が全身療法[\"1\",\"2\"]。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行病変に対する内分泌療法は未治療、化学療法は1ラインまで許容。",
+        "checkedDate": "2026-11-08"
+      },
+      "endocrine": {
+        "lines": [
+          "1"
+        ],
+        "label": "内分泌療法：一次治療",
+        "note": "進行病変に対する内分泌療法は未治療。lineBucketNoteにも「進行期内分泌療法の一次治療」とある。",
+        "verification": "classification_only",
+        "evidenceQuote": "firstlineは進行期内分泌療法の一次治療を指す。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "paloma-3": {
+    "id": "paloma-3",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "全身療法：一次・二次・三次以降治療",
+        "note": "術後内分泌療法の治療中・治療後に再発し、転移期治療を受けていない例は一次治療に当たる。転移期の内分泌療法後に増悪した例と、進行期化学療法1ライン既治療例は二次以降になる。三次以降は、進行期の内分泌療法中の増悪による1ラインに、許容された進行期化学療法1ラインが加わることで、3ライン目の治療として到達しうる（両条件を同時に満たす例があることが前提）。",
+        "verification": "classification_only",
+        "evidenceQuote": "前治療内分泌療法中・後に増悪または再発。閉経状態を問わず、閉経前・周閉経期ではゴセレリン併用。進行期化学療法1ラインまで許容。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "note": "内分泌療法軸は判定不能のため付けない：三次以降になるには進行期内分泌療法が2ライン以上必要だが、その上限・本数が材料に記載されておらず、lines を絞る根拠もない。一次資料で確認するまで未分類。全身療法軸の三次以降は、内分泌療法の本数ではなく「進行期内分泌療法中の増悪（1ライン）＋進行期化学療法1ライン」の経路による。",
+    "checkedDate": "2026-11-08"
+  },
+  "bolero-2": {
+    "id": "bolero-2",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "全身療法：一次・二次・三次以降治療",
+        "note": "AIによる術後療法中・終了後12か月以内の再発は転移期の初回治療（一次）、進行期治療中・終了後の増悪は二次以降。進行期化学療法は1レジメンまで。進行期治療中・終了後の増悪（1ライン）に、許容された進行期化学療法1レジメンが加わることで、3ライン目の治療として到達しうる（両条件を同時に満たす例があることが前提）。",
+        "verification": "classification_only",
+        "evidenceQuote": "レトロゾール／アナストロゾールによる術後療法中・終了後12か月以内、または進行期治療中・終了後1か月以内に再発／増悪。進行期化学療法は1レジメンまで。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "note": "内分泌療法軸は判定不能のため付けない：三次以降になるには進行期内分泌療法が2ライン以上必要だが、その上限・本数が材料に記載されておらず、lines を絞る根拠もない。一次資料で確認するまで未分類。全身療法軸の三次以降は、内分泌療法の本数ではなく「進行期治療中・終了後の増悪（1ライン）＋進行期化学療法1レジメン」の経路による。",
+    "checkedDate": "2026-11-08"
+  },
+  "olympiad": {
+    "id": "olympiad",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "全身療法：一次・二次・三次以降治療",
+        "note": "転移期化学療法は0〜2レジメン既治療なので、TNBCでは一次〜三次治療に当たる。HR陽性集団は転移期内分泌療法の既治療が加わることがあるが、その場合も一次・二次・三次以降の範囲に収まる。周術期のタキサン・アントラサイクリンはラインに数えない。",
+        "verification": "classification_only",
+        "evidenceQuote": "HR陽性・TNBCの両方。転移病変への化学療法は0～2レジメン、周術期を含めタキサンとアントラサイクリン（禁忌を除く）既治療。HR陽性は内分泌療法後増悪または不適と判断。",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "化学療法/ADC：一次・二次・三次以降治療",
+        "note": "転移期化学療法は0〜2レジメン既治療なので、一次〜三次治療に当たる（三次は「3plus」に入れる）。タキサン・アントラサイクリンの既治療は周術期の使用でもよく、転移期のラインには数えない。lineBucketNoteにも「転移病変への化学療法0ラインも対象」とある。",
+        "verification": "classification_only",
+        "evidenceQuote": "転移病変への化学療法は0～2レジメン",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "note": "内分泌療法軸は付けない：試験治療はオラパリブ対化学療法で、内分泌療法を含まないため。",
+    "checkedDate": "2026-11-08"
+  },
+  "embraca": {
+    "id": "embraca",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "全身療法：一次・二次・三次以降治療",
+        "note": "進行期細胞傷害性化学療法は3レジメン以内（0ラインも登録）なので、化学療法の位置で一次〜四次になりうる。四次以降は「3plus」に入れる。周術期のタキサン・アントラサイクリンはラインに数えない。HR陽性集団の内分泌療法ラインは記載がない。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期細胞傷害性化学療法3レジメン以内。",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "化学療法/ADC：一次・二次・三次以降治療",
+        "note": "進行期細胞傷害性化学療法3レジメン以内なので、試験治療は化学療法の一次〜四次に当たりうる（四次以降は「3plus」）。lineBucketNoteにも「0ラインも登録」とある。",
+        "verification": "classification_only",
+        "evidenceQuote": "chemo_pretreatedは進行期化学療法既治療例を含む意味。0ラインも登録。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "monarch-2": {
+    "id": "monarch-2",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2"
+        ],
+        "label": "全身療法：一次・二次治療",
+        "note": "周術期ET中/後の再発は転移期一次、進行期一次ET中の増悪は二次。進行期ETは1ラインまで、進行期化学療法歴なし。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期ETは1ラインまで、進行期化学療法歴なし。",
+        "checkedDate": "2026-11-08"
+      },
+      "endocrine": {
+        "lines": [
+          "1",
+          "2"
+        ],
+        "label": "内分泌療法：一次・二次治療",
+        "note": "周術期内分泌療法中／終了後12か月以内の増悪は転移期内分泌療法の一次、進行期一次内分泌療法中の増悪は二次。進行期ETは1ラインまで。",
+        "verification": "classification_only",
+        "evidenceQuote": "周術期内分泌療法中／終了後12か月以内、または進行期一次内分泌療法中に増悪。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "marianne": {
+    "id": "marianne",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1"
+        ],
+        "label": "全身療法：一次治療",
+        "note": "進行期治療未治療。",
+        "verification": "classification_only",
+        "evidenceQuote": "HER2陽性進行乳癌、進行期治療未治療。",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1"
+        ],
+        "label": "化学療法/ADC：一次治療",
+        "note": "進行期治療未治療で、試験治療はT-DM1（ADC）、対照はトラスツズマブ＋タキサン。進行期治療未治療のため化学療法/ADCも一次。同型のdestiny-breast09（ADC対THP、転移期未治療）にchemotherapy軸「一次」が付いている。",
+        "verification": "classification_only",
+        "evidenceQuote": "HER2陽性進行乳癌、進行期治療未治療。",
+        "checkedDate": "2026-11-08"
+      },
+      "antiher2": {
+        "lines": [
+          "1"
+        ],
+        "label": "抗HER2療法（HER2陽性）：一次治療",
+        "note": "進行期治療未治療のため抗HER2療法も一次。",
+        "verification": "classification_only",
+        "evidenceQuote": "HER2陽性進行乳癌、進行期治療未治療。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "first": {
+    "id": "first",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1"
+        ],
+        "label": "全身療法：一次治療",
+        "note": "進行期未治療。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期未治療の閉経後ER陽性局所進行・転移乳癌205例。",
+        "checkedDate": "2026-11-08"
+      },
+      "endocrine": {
+        "lines": [
+          "1"
+        ],
+        "label": "内分泌療法：一次治療",
+        "note": "進行期未治療のため内分泌療法も一次（paloma-2等と同じ扱い）。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期未治療の閉経後ER陽性局所進行・転移乳癌205例。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "swog-s0226": {
+    "id": "swog-s0226",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1"
+        ],
+        "label": "全身療法：一次治療",
+        "note": "転移乳癌の一次療法。術後タモキシフェン歴は層別因子でラインに数えない。",
+        "verification": "classification_only",
+        "evidenceQuote": "閉経後HR陽性転移乳癌の一次療法。",
+        "checkedDate": "2026-11-08"
+      },
+      "endocrine": {
+        "lines": [
+          "1"
+        ],
+        "label": "内分泌療法：一次治療",
+        "note": "転移乳癌の一次療法。内分泌療法としても一次。術後タモキシフェン歴は周術期でラインに数えない。",
+        "verification": "classification_only",
+        "evidenceQuote": "閉経後HR陽性転移乳癌の一次療法。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "fact": {
+    "id": "fact",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1"
+        ],
+        "label": "全身療法：一次治療",
+        "note": "局所乳癌の初回再発に対する治療で、約2/3に術後抗エストロゲン歴があるが周術期のためラインに数えない。lineBucketsもfirstline。",
+        "verification": "classification_only",
+        "evidenceQuote": "局所乳癌の初回再発、HR陽性。",
+        "checkedDate": "2026-11-08"
+      },
+      "endocrine": {
+        "lines": [
+          "1"
+        ],
+        "label": "内分泌療法：一次治療",
+        "note": "初回再発に対する内分泌療法なので一次。術後抗エストロゲン歴は周術期でラインに数えない。",
+        "verification": "classification_only",
+        "evidenceQuote": "局所乳癌の初回再発、HR陽性。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "sofea": {
+    "id": "sofea",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2"
+        ],
+        "label": "全身療法：一次・二次治療",
+        "note": "AIの術後投与中の再発は転移期一次、進行期一次AI投与中の増悪は二次。",
+        "verification": "classification_only",
+        "evidenceQuote": "非ステロイド性AIの術後12か月以上または進行期一次6か月以上の投与中に再発・増悪した閉経後HR陽性723例。",
+        "checkedDate": "2026-11-08"
+      },
+      "endocrine": {
+        "lines": [
+          "1",
+          "2"
+        ],
+        "label": "内分泌療法：一次・二次治療",
+        "note": "術後AI投与中の再発は転移期内分泌療法の一次、進行期一次のAI投与中の増悪は二次。",
+        "verification": "classification_only",
+        "evidenceQuote": "非ステロイド性AIの術後12か月以上または進行期一次6か月以上の投与中に再発・増悪した閉経後HR陽性723例。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "impassion130": {
+    "id": "impassion130",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1"
+        ],
+        "label": "全身療法：一次治療",
+        "note": "進行期未治療。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期未治療の切除不能局所進行／転移性TNBC902例。",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1"
+        ],
+        "label": "化学療法/ADC：一次治療",
+        "note": "進行期未治療のTNBCで、試験治療にnab-パクリタキセルを含む。TNBCの進行期未治療試験（keynote-355, capitello-290等）に合わせ、化学療法/ADCも一次。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期未治療の切除不能局所進行／転移性TNBC902例。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "impassion131": {
+    "id": "impassion131",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1"
+        ],
+        "label": "全身療法：一次治療",
+        "note": "進行期一次療法。周術期化学療法はラインに数えない。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期一次療法のTNBC651例。周術期化学療法から12か月以上を許容。",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1"
+        ],
+        "label": "化学療法/ADC：一次治療",
+        "note": "進行期一次療法のTNBCで、試験治療にパクリタキセルを含む。TNBCの進行期一次試験の慣例に合わせ化学療法/ADCも一次。周術期化学療法は数えない。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期一次療法のTNBC651例。周術期化学療法から12か月以上を許容。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "embrace": {
+    "id": "embrace",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "3plus"
+        ],
+        "label": "全身療法：三次以降治療",
+        "note": "化学療法2–5レジメン歴のうち進行期で2以上。進行期で2レジメン以上受けた後なので転移期全身療法として三次以降。",
+        "verification": "classification_only",
+        "evidenceQuote": "化学療法2–5レジメン歴（進行期で2以上）",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "3plus"
+        ],
+        "label": "化学療法/ADC：三次以降治療",
+        "note": "進行期で化学療法2レジメン以上既治療のため、化学療法として三次以降。",
+        "verification": "classification_only",
+        "evidenceQuote": "化学療法2–5レジメン歴（進行期で2以上）",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "metric": {
+    "id": "metric",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "全身療法：一次・二次・三次以降治療",
+        "note": "進行病変への化学療法は2ライン以下（0ラインも許容）なので化学療法の位置で一次〜三次。olympiadと同様、化学療法の範囲が0〜2のため一次・二次・三次以降とした。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行病変への化学療法2ライン以下。",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1",
+          "2",
+          "3plus"
+        ],
+        "label": "化学療法/ADC：一次・二次・三次以降治療",
+        "note": "進行病変への化学療法2ライン以下既治療。タキサン・アントラサイクリン既治療は病期の記載がなく、数えない。TNBCではchemotherapy軸＝化学療法の位置。",
+        "verification": "classification_only",
+        "evidenceQuote": "タキサン既治療、原則アントラサイクリン既治療、進行病変への化学療法2ライン以下。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "pakt": {
+    "id": "pakt",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "1"
+        ],
+        "label": "全身療法：一次治療",
+        "note": "進行期未治療。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期未治療のTNBC女性140例。",
+        "checkedDate": "2026-11-08"
+      },
+      "chemotherapy": {
+        "lines": [
+          "1"
+        ],
+        "label": "化学療法/ADC：一次治療",
+        "note": "進行期未治療のTNBCで、試験治療にパクリタキセルを含む。capitello-290と同型で化学療法/ADCも一次。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期未治療のTNBC女性140例。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "checkedDate": "2026-11-08"
+  },
+  "th3resa": {
+    "id": "th3resa",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "3plus"
+        ],
+        "label": "全身療法：三次以降治療",
+        "note": "進行期の抗HER2レジメンを2つ以上受けた後の増悪なので、転移期全身療法として三次以降。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期抗HER2レジメン2つ以上後増悪",
+        "checkedDate": "2026-11-08"
+      },
+      "antiher2": {
+        "lines": [
+          "3plus"
+        ],
+        "label": "抗HER2療法（HER2陽性）：三次以降治療",
+        "note": "進行期の抗HER2レジメンを2つ以上受けた後の増悪なので、抗HER2療法として三次以降。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期トラスツズマブ・ラパチニブ、任意の病期でタキサン既治療、進行期抗HER2レジメン2つ以上後増悪。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "note": "化学療法/ADC軸は判定不能のため付けない：タキサン既治療の病期が「任意の病期」とされ、転移期化学療法を何レジメン受けたかが材料にない。抗HER2レジメンの数から化学療法のラインは推測しない。",
+    "checkedDate": "2026-11-08"
+  },
+  "nala": {
+    "id": "nala",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "3plus"
+        ],
+        "label": "全身療法：三次以降治療",
+        "note": "進行期で抗HER2レジメン2種類以上の治療歴があるため、転移期全身療法として三次以降。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期で抗HER2レジメン2種類以上の治療歴。",
+        "checkedDate": "2026-11-08"
+      },
+      "antiher2": {
+        "lines": [
+          "3plus"
+        ],
+        "label": "抗HER2療法（HER2陽性）：三次以降治療",
+        "note": "進行期の抗HER2レジメン2種類以上の治療歴があるため、抗HER2療法として三次以降。",
+        "verification": "classification_only",
+        "evidenceQuote": "進行期で抗HER2レジメン2種類以上の治療歴。",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "note": "化学療法/ADC軸は判定不能のため付けない：進行期化学療法の既治療数が材料にない。抗HER2レジメンの数から化学療法のラインは推測しない。",
+    "checkedDate": "2026-11-08"
+  },
+  "keynote-119": {
+    "id": "keynote-119",
+    "axes": {
+      "systemic": {
+        "lines": [
+          "2",
+          "3plus"
+        ],
+        "label": "全身療法：二次以降治療",
+        "note": "転移性疾患への全身療法を1〜2レジメン受けた後の増悪なので、二次・三次治療に当たる（三次は「3plus」に入れる）。転移期の初回治療は含まない。",
+        "verification": "classification_only",
+        "evidenceQuote": "転移性疾患への全身療法1–2レジメン後に増悪",
+        "checkedDate": "2026-11-08"
+      }
+    },
+    "maintenance": false,
+    "note": "母集団の記載は全身療法のレジメン数であり、化学療法のライン数とは確定できないため、化学療法軸は付けない（先例 optitrop-breast01 に倣う）。",
+    "checkedDate": "2026-11-08"
   }
 };
